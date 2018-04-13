@@ -1,0 +1,218 @@
+/*共用設定區*/
+
+/*字體*/
+*
+{
+    font-family: "Microsoft JhengHei Light"
+}
+body
+{
+    margin:0px;
+}
+/*連結*/
+a
+{
+    font-weight: normal;
+    color:white;
+    text-decoration:none;
+    font-size: 28px;
+}
+/*ul正常化*/
+ul
+{
+    list-style-type: none;
+    padding: 0px
+}
+/*li內縮*/
+li
+{
+    display: inline-block;
+    text-align: center;
+}
+/*基本共用設定區*/
+/*標題*/
+.title
+{
+    text-align: center;
+}
+/*內容*/
+.content
+{
+    text-align: center;
+}
+/*遮罩*/
+.mask
+{
+    width:680px;
+    height:100%;
+    position: relative;
+    display:inline-block;
+}
+/*右遮罩*/
+.right.mask
+{
+    position: absolute;
+    right:55px;
+}
+/*左遮罩*/
+.left.mask
+{
+    margin-left: 55px;
+}
+.feature,.footer,.main.article
+{
+    position: relative;
+    width:100%;
+    height: 670px;
+}
+/*色彩主題區*/
+/*暗色*/
+.dark
+{
+    color:rgb(204,204,204);
+}
+.dark .title
+{
+    color:rgb(159,197,248);
+}
+.dark .button
+{
+    color:rgb(204,204,204);
+    border-color:rgb(204,204,204);
+}
+.dark .mask
+{
+    background-color: rgba(0,0,0,0.25);
+    
+}
+/*亮色*/
+.light 
+{
+    color:rgb(51,51,51);
+}
+.light .title
+{
+    color:rgb(07,55,99);
+}
+
+.light .button
+{
+    color:rgb(51,51,51);
+    border-color:rgb(51,51,51);
+}
+.light .mask
+{
+    background-color: rgba(255,255,255,0.75);
+}
+
+
+
+/*HTML 內容設定區*/
+/*外層容器*/
+.container
+{
+    position: relative;
+    margin:0px auto;
+    width: 1280px;
+    background-color: rgb(238,238,238);
+}
+/*導覽列*/
+.header > .navigation
+{
+    width:100%;
+    background-color: rgb(153,0,0);
+}
+
+/*導覽列icon*/
+.header > .navigation > .icon
+{
+    width: 32px;
+    height: 32px;
+}
+/*導覽列連結陣列*/
+.header > .navigation > .linkList
+{
+    display: inline-block;
+}
+/*導覽列連結陣列物件*/
+.header > .navigation > .linkList > li
+{
+    margin-right: 40px;
+}
+/*主頁區*/
+.main.article
+{
+    text-align: center;
+    background-image: url("../image/headerBackground.png");
+}
+.main.article>.mask
+{
+    height:335px;
+}
+/*特性陣列圖檔*/
+.featureList img
+{
+    width:64px;
+    height: 64px;
+}
+
+/*特性區*/
+/*特性1*/
+.feature.childhood
+{
+    background-image: url("../image/palletTown.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+/*特性2*/
+.feature.withoutLogin
+{
+    background-image: url("../image/ibuBackground.png");
+}
+.ibu
+{
+    position: absolute;
+    right: 80px;
+    width: 430px;
+    height: 460px;
+}
+/*特性區*/
+/*特性3*/
+.feature.openSource
+{
+    background-image: url("../image/code.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*強制覆蓋共用區*/
+/*按鈕*/
+.button
+{
+    user-select: none;
+    padding:12px 44px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    transition:all 0.2s;
+    width:max-content;
+    display: block;
+    position: relative;
+    margin:0px auto;
+}
+.button:hover
+{
+    border-color:rgb(51,51,51);
+    background-color:rgb(159,197,248);
+    color:rgb(51,51,51);
+}
+.button:active
+{
+    border-color: rgb(204,204,204);
+    background-color:rgb(07,55,99);
+    color:rgb(204,204,204);
+}

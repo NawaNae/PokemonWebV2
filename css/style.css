@@ -1,4 +1,4 @@
-/*共用設定區*/
+﻿/*共用設定區*/
 
 /*字體*/
 *
@@ -354,7 +354,7 @@ li
 }
 .footer .footerBody
 {
-    padding-top:120px;
+    padding-top:160px;
     margin:0px auto;
     width:990px;
 }

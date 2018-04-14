@@ -14,7 +14,7 @@
     <div class="container">
         <header class="header">
             <nav class="navigation">
-                <img class="icon" src="image/pokemonBall.png" alt="" srcset="">
+                    <img class="icon" src="image/pokemonBall.png" alt="" srcset="">
                 <ul class="linkList">
                     <li>
                         <a href="#">黃教獸</a>
@@ -36,16 +36,20 @@
                     </li>
                 </ul>
             </nav>
+            <div class="circleContainer"><div class="circle"></div></div>
+            
         </header>
         <main class="main">
             <article class="main article light">
-                <img src="image/chicken.png" class="chicken" align="center" alt="" srcset="">
-                <div class="mask">
-                    <h1 class="title">ProfessorHuang</h1>
-                    <p class="content">一款以1998年於GameBoy的黃怪獸（Pokémon Yellow）為原型的網頁小遊戲上線拉！以學習為目的，所以它是開源且免費的。</p>
-                    <div class="button playNow">PlayNow</div>
+                <div class="pictureContainer">
+                    <img src="image/chicken.png" class="chicken" alt="" srcset="">
+                    <div class="mask">
+                        <h1 class="title">ProfessorHuang</h1>
+                        <p class="content">一款以1998年於GameBoy的黃怪獸（Pokémon Yellow）為原型的網頁小遊戲上線拉！以學習為目的，所以它是開源且免費的。</p>
+                        <div class="button playNow">PlayNow</div>
+                    </div>
+                    <img src="image/pikachu.png" class="pikachu" alt="" srcset="">
                 </div>
-                <img src="image/pikachu.png" class="pikachu" align="center" alt="" srcset="">
                 <ul class="featureList">
                     <li>
                         <img src="image/gameBoy.png" alt="">
@@ -69,17 +73,20 @@
                 <img src="image/protagonist.png" class="protagonist" alt="" srcset="">
                 <div class="mask right">
                     <h1 class="title">喚醒你的童年</h1>
-                    <p class="content">還記得玩著GameBoy，忘了吃飯的時光嗎？只要開啟遊戲就可以馬上回到屬於你的懷舊旅程。</p>
+                    <p class="content">還記得玩著GameBoy，忘了吃飯的時光嗎？
+                        <br>開啟遊戲就可以馬上回到
+                        <br>只屬於你的懷舊旅程。</p>
                     <div class="button playNow">PlayNow</div>
                 </div>
-                
+
             </article>
             <article class="feature withoutLogin article dark">
                 <div class="mask left">
                     <h1 class="title">免註冊</h1>
                     <p class="content">不用登入！而且可以儲存進度。
-                            讓你的人生更簡單！
-                            不必擔心忘記密碼、個人資料問題。</p>
+                        <br> 讓你的人生更簡單！
+                        <br> 不必擔心忘記密碼、個人資料問題。
+                    </p>
                     <div class="button playNow">PlayNow</div>
                 </div>
                 <img src="image/ibu.png" class="ibu" alt="" srcset="">
@@ -87,57 +94,40 @@
             <article class="feature openSource article dark">
                 <div class="mask right">
                     <h1 class="title">開源</h1>
-                    <p class="content">想知道這是怎麼做的？<br>想要改數值？<br>不用破解，看看原始碼吧！</p>
+                    <p class="content">想知道這是怎麼做的？
+                        <br>想要改數值？
+                        <br>不用破解，看看原始碼吧！</p>
                     <div class="button GitHub">GitHub</div>
                 </div>
             </article>
         </main>
         <footer class="footer">
             <article class="article light contact">
-                <header class="title">
-                    <img src="" alt="" srcset="">
-                    <h1 class="title">聯絡方式</h1>
-                </header>
-                <main>
-                <div class="line dot"></div>
-                <div class="information">
-                    <div class="name">NawaNawa</div>
-                    <div class="email">t105590029@ntut.org.tw</div>
-                    <div class="FB">FB:洪太煬</div>
-                </div>
-                <div class="line solid"></div>
-                <aside class="share">
-                    <a href="">
-                        <img src="image/FB.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/G+.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/linkedIn.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/Twitter.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/IG.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/Weibo.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/WeChat.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="image/RSS.png" alt="">
-                    </a>
-                </aside>
-                <div class="declare">
-                    <div class="def">此遊戲計畫僅用於*教育用途，無任何營利</div>
-                    <div class="explanation">*用於台北科技大學資訊工程系物件導向程式設計實習課程</div>
-                    <div class="def">此網頁僅用於*教育用途，無任何營利</div>
-                    <div class="explanation">*用於台北科技大學資訊工程系網頁設計課程</div>
-                </div>
+                <main class="footerBody">
+                    <div class="footerContent">
+                        <header class="title">
+                            <!--img src="" alt="" srcset=""-->
+                            <h1 class="title">聯絡方式</h1>
+                        </header>
+                        <div class="line dot"></div>
+                        <div class="information">
+                            <div class="name">NawaNawa</div>
+                            <div class="email">t105590029@ntut.org.tw</div>
+                            <div class="FB">FB:洪太煬</div>
+                        </div>
+                        <div class="line"></div>
+                        <aside class="share"><a href=""><img src="image/FB.png" alt=""></a> <a href=""><img src="image/G+.png" alt=""></a><a href=""><img src="image/linkedIn.png" alt=""></a><a href=""><img src="image/Twitter.png" alt=""></a><a href=""><img src="image/IG.png" alt=""></a><a href=""><img src="image/Weibo.png" alt=""></a><a href=""><img src="image/WeChat.png" alt=""></a><a href=""><img src="image/RSS.png" alt=""></a></aside>
+                    </div>
+                    <div class="declare">
+                        <div class="defContainer">
+                            <div class="def">此遊戲計畫僅用於*教育用途，無任何營利</div>
+                            <div class="explanation">*用於台北科技大學資訊工程系物件導向程式設計實習課程</div>
+                        </div>
+                        <div class="defContainer">
+                            <div class="def">此網頁僅用於*教育用途，無任何營利</div>
+                            <div class="explanation">*用於台北科技大學資訊工程系網頁設計課程</div>
+                        </div>
+                    </div>
                 </main>
                 <footer class="developerInfo">Designed by NawaNawa in 2018</footer>
             </article>

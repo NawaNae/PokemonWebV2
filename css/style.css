@@ -3,7 +3,9 @@
 /*字體*/
 *
 {
-    font-family: "Microsoft JhengHei Light"
+    font-family: "Microsoft JhengHei Light";
+    margin:0;
+    padding:0px;
 }
 body
 {
@@ -33,12 +35,22 @@ li
 /*標題*/
 .title
 {
+    margin-top: 20px;
+    font-weight: normal;
     text-align: center;
 }
 /*內容*/
 .content
 {
     text-align: center;
+}
+.article *
+{
+    margin-bottom:20px;
+}
+.article a>img
+{
+    margin-bottom: 0px;
 }
 /*遮罩*/
 .mask
@@ -47,19 +59,22 @@ li
     height:100%;
     position: relative;
     display:inline-block;
+    text-align: center;
 }
 /*右遮罩*/
 .right.mask
 {
+    padding-top:160px;
     position: absolute;
     right:55px;
 }
 /*左遮罩*/
 .left.mask
 {
+    padding-top:160px;
     margin-left: 55px;
 }
-.feature,.footer,.main.article
+.feature,.footer .article,.main.article
 {
     position: relative;
     width:100%;
@@ -104,8 +119,57 @@ li
 {
     background-color: rgba(255,255,255,0.75);
 }
+/*分隔線*/
+.line
+{
+    content:"";
+    display: block;
+    width:485px;
+    height:0px;
+    border:0.5px solid rgb(51,51,51);
+    border-width: 1px 0px;
 
-
+}
+.line.dot
+{
+    border-style: dotted;
+}
+/*字體大小 粗細*/
+/*標題*/
+.title
+{
+    font-size: 60px;
+}
+.content
+{
+    font-size: 32px;
+}
+.header>.navigation>.linkList
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+.featureText
+{
+    font-size: 24px;
+}
+.information
+{
+    font-size: 28px;
+}
+.def
+{
+    font-size: 24px;
+}
+.explanation
+{
+    font-size: 16px;
+}
+.developerInfo
+{
+    font-size: 24px;
+    font-weight: bold;
+}
 
 /*HTML 內容設定區*/
 /*外層容器*/
@@ -119,13 +183,23 @@ li
 /*導覽列*/
 .header > .navigation
 {
+    position: relative;
+    box-sizing: border-box;
+    padding:0 55px;
     width:100%;
     background-color: rgb(153,0,0);
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(51,51,51);
+    border-bottom-style: solid;
+    line-height: 3em;
 }
 
 /*導覽列icon*/
-.header > .navigation > .icon
+.header > .navigation  .icon
 {
+    display: inline-block;
+    /*margin-top:1em;*/
+    vertical-align: sub;
     width: 32px;
     height: 32px;
 }
@@ -139,21 +213,63 @@ li
 {
     margin-right: 40px;
 }
+/*對齊用容器*/
+.header .circleContainer
+{
+    width:100%;
+    position: relative;
+    height: 0px;
+
+}
+/*寶可夢球圓形*/
+.header .circle
+{
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(238,238,238);
+    border:5px rgb(51,51,51) solid;
+    border-radius: 99em;
+    position: relative;
+    z-index: 5;
+    top: -20px;
+    left:calc(50% - 20px);
+    display: inline-block;
+}
 /*主頁區*/
 .main.article
 {
     text-align: center;
     background-image: url("../image/headerBackground.png");
 }
-.main.article>.mask
+.pictureContainer
 {
-    height:335px;
+    height: auto;
+    padding-top:170px ;
+    margin-bottom: 23px ;
+}
+.pictureContainer img
+{
+    vertical-align: super;
+}
+.main.article .mask
+{
+    height:auto;
+    margin:0px 13px;
 }
 /*特性陣列圖檔*/
 .featureList img
 {
     width:64px;
     height: 64px;
+}
+.featureList li
+{
+    margin-right: 125px;
+}
+.featureList
+{
+    margin-right: -125px;
 }
 
 /*特性區*/
@@ -166,6 +282,12 @@ li
     background-position: center center;
     background-size: cover;
 }
+.feature.childhood .protagonist
+{
+    position: absolute;
+    top:calc(50% - 52px);
+    left:20%;
+}
 /*特性2*/
 .feature.withoutLogin
 {
@@ -177,6 +299,7 @@ li
     right: 80px;
     width: 430px;
     height: 460px;
+    margin-top: 100px;
 }
 /*特性區*/
 /*特性3*/
@@ -188,7 +311,62 @@ li
     background-position: center center;
     background-size: cover;
 }
-
+/*頁尾區*/
+.footer>.article.contact
+{
+    background-image: url("../image/footer.jpg");
+    background-size: 100% 100%;
+}
+.footerContent
+{
+    text-align: center;
+    display: inline-block;
+    margin:0px;
+}
+.footer .title
+{
+    width:100%;
+    margin-top:0px;
+}
+.footer .footerBody
+{
+    padding-top:120px;
+    margin:0px auto;
+    width:990px;
+}
+.footer .share
+{
+    margin-right: calc((485px - 384px )/ -7);
+    text-align: left;
+}
+.footer .share *
+{
+    display: inline-block;
+    margin:0;
+}
+.footer .share a
+{
+    margin-right: calc((485px - 384px )/ 7);;
+}
+.declare .defContainer
+{
+    position: relative;
+}
+.declare .defContainer *
+{
+    margin:0px;
+    display: inline-block;
+}
+.declare .defContainer .explanation
+{
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+}
+.footer .developerInfo
+{
+    text-align: center;
+}
 /*強制覆蓋共用區*/
 /*按鈕*/
 .button
@@ -200,9 +378,9 @@ li
     border-radius: 3px;
     transition:all 0.2s;
     width:max-content;
-    display: block;
+    display: inline-block;
     position: relative;
-    margin:0px auto;
+    
 }
 .button:hover
 {

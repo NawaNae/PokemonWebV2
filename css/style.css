@@ -231,6 +231,16 @@ li
 {
     margin-right: 40px;
 }
+/*導覽列 link 視覺回饋*/
+.header > .navigation > .linkList > li > a:hover
+{
+    text-shadow:0px 1px 10px #ffe008,0px 1px 10px #ffe008;
+    transition: all 0.3s;
+}
+.header > .navigation > .linkList > li > a:active
+{
+    text-shadow:0px 1px 10px #ffffff,0px 1px 10px #ffffff;
+}
 /*對齊用容器*/
 .header .circleContainer
 {
@@ -371,6 +381,24 @@ li
 .footer .share a
 {
     margin-right: calc((485px - 384px )/ 7);;
+}
+/*share圖片視覺回饋*/
+.footer .share a>img
+{
+    width: 48px;
+    height: 48px;
+    transition: all 0.4s;
+}
+.footer .share a>img:hover
+{
+    
+    width: 52px;
+    height: 52px;
+}
+.footer .share a>img:active
+{
+    box-shadow:rgba(126, 255, 255, 0.75) 0px 0px 17px 7px;
+   background-color:rgba(126, 255, 255, 0.75) ;
 }
 .declare .defContainer
 {

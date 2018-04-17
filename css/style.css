@@ -78,7 +78,7 @@ li
     padding-top:160px;
     margin-left: 55px;
 }
-.feature,.footer .article,.main.article
+.feature,.footer .article,#main.article
 {
     position: relative;
     width:100%;
@@ -265,7 +265,7 @@ li
     display: inline-block;
 }
 /*主頁區*/
-.main.article
+#main.article
 {
     margin-top:3em;
     text-align: center;
@@ -282,7 +282,7 @@ li
 {
     vertical-align: super;
 }
-.main.article .mask
+#main.article .mask
 {
     height:auto;
     margin:0px 13px;
@@ -304,7 +304,7 @@ li
 
 /*特性區*/
 /*特性1*/
-.feature.childhood
+.feature#childhood
 {
     background-image: url("../image/palletTown.jpg");
     background-repeat: no-repeat;
@@ -312,18 +312,18 @@ li
     background-position: center center;
     background-size: cover;
 }
-.feature.childhood .protagonist
+.feature#childhood .protagonist
 {
     position: absolute;
     top:calc(50% - 52px);
     left:20%;
 }
-.feature.childhood .mask
+.feature#childhood .mask
 {
     background-color: rgba(255,255,255,0.925);
 }
 /*特性2*/
-.feature.withoutLogin
+.feature#withoutLogin
 {
     background-image: url("../image/ibuBackground.png");
 }
@@ -337,7 +337,7 @@ li
 }
 /*特性區*/
 /*特性3*/
-.feature.openSource
+.feature#openSource
 {
     background-image: url("../image/code.png");
     background-repeat: no-repeat;
@@ -346,7 +346,7 @@ li
     background-size: cover;
 }
 /*頁尾區*/
-.footer>.article.contact
+.footer>.article#contact
 {
     background-image: url("../image/footer.jpg");
     background-size: 100% 100%;

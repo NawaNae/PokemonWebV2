@@ -54,9 +54,31 @@ class PageList extends Array
         else
             console.log("超出範圍");
     }
+    set select(id)
+    {
+        let select=this.getIndexById(id)
+        if(typeof select!="undefined")
+            this.indexNow=select;
+    }
+    get select()
+    {
+        return this[this.indexNow];
+    }
     get indexNow()
     {
         return this._indexNow;
+    }
+    getIndexById(id)
+    {
+        var i=0;
+        for(;i<this.length;i++)
+            if(id==this[i].id)
+                return i;
+        return undefined;
+    }
+    getElementById(id)
+    {
+        return  this.find(element=> element.id==id);
     }
 }
 /*initialize */

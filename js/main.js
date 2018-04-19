@@ -138,6 +138,7 @@ function(e)
         }
     }).fadeIn('500');
 }
+
 /*initialize */
 
 NawaNawa.pageList=new NawaNawa.Classes.PageList();
@@ -149,4 +150,24 @@ NawaNawa.pageList=new NawaNawa.Classes.PageList();
 $(".nextPageButton").on("click",NawaNawa.nextPageListener);
 $(".lastPageButton").on("click",NawaNawa.lastPageListener);
 })();
+window.onhashchange=
+function(e)
+{
 
+    if(location.hash)
+    {
+        getVariable();
+        e.preventDefault();
+    }
+    else{}
+}
+function getVariable()
+{
+    var HashStr = document.location.hash.substring(1, document.location.hash.length);
+    var HashStr0 = HashStr[0];
+    HashStr=HashStr.substring(1, document.location.hash.length)
+    HashStr0 = HashStr0.toLowerCase();
+    HashStr0 += HashStr;
+    if (HashStr0 != '') 
+        NawaNawa.pageList.select = HashStr0;
+}

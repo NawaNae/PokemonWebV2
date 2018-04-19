@@ -3,7 +3,7 @@
  * @example http://url.....#A=5&B=10&C=15 經過getVariable可解析變數名稱及value 得到Varible={ID:A,Value:5}及其他B、C並處理換頁
  */
 function getVariable() {
-    var SearchStr = document.location.search.substring(1, document.location.search.length);
+   // var SearchStr = document.location.search.substring(1, document.location.search.length);
     var HashStr = document.location.hash.substring(1, document.location.hash.length);
     if (HashStr != '') 
         HashStr.split('&').forEach(HashVariableCallBack);//將各個拆開的變數字串處理

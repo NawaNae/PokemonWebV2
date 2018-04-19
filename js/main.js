@@ -48,17 +48,25 @@ class PageList extends Array
     {
         if(i<this.length)
         {
-            $('html').animate({scrollTop: $(this[i]).offset().top-57}, 1000,()=>{NawaNawa.scrollLock=false;});
             this._indexNow=i;
+            var id=this[i].id.toString();
+            
+            console.log()
+            location.hash=id[0].toUpperCase()+id.substring(1,id.length);
         }
         else
             console.log("超出範圍");
     }
     set select(id)
     {
-        let select=this.getIndexById(id)
-        if(typeof select!="undefined")
-            this.indexNow=select;
+
+            let select=this.getIndexById(id)
+            if(typeof select!="undefined")
+            {
+                this.indexNow=select;
+                $('html').animate({scrollTop: $(this[this.indexNow]).offset().top-57}, 1000,()=>{NawaNawa.scrollLock=false;});
+            }
+        
     }
     get select()
     {

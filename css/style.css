@@ -349,8 +349,6 @@ li
 #playHelp
 {
    background-image: url("../image/playHelpBackground.jpg");
-
-
 }
 #playHelp .mask
 {
@@ -406,7 +404,22 @@ li
     background-position: 0 0;
     height: 48px;
     width: 48px;
+    opacity: 0.9;
 }
+.dark .nextPageButton.disable
+{
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    top:calc(50% - 24px);
+    background-image: url("../image/arrows.png");
+    background-repeat: no-repeat;
+    background-size: 50px 218px;
+    background-position: 0 0;
+    height: 48px;
+    width: 48px;
+}
+
 .dark .lastPageButton
 {
     position: absolute;
@@ -418,6 +431,11 @@ li
     background-position: 0 -50px;
     height: 48px;
     width: 48px;
+    opacity: 0.9;
+}
+.dark .lastPageButton.disable
+{
+    opacity: 0.3;
 }
 /*頁尾區*/
 .footer>.article#contact

@@ -113,8 +113,9 @@ function(e)
             if(content.dataset.lastpagesrc)
                 if(theOtherButton.classList.contains("disable"))
                 theOtherButton.classList.remove("disable");
+            $(pages).fadeIn('500');
         }
-    }).fadeIn('500');
+    });
 }
 NawaNawa.lastPageListener=
 function(e)
@@ -135,8 +136,9 @@ function(e)
             if(content.dataset.nextpagesrc)
                 if(theOtherButton.classList.contains("disable"))
                 theOtherButton.classList.remove("disable");
+                $(pages).fadeIn('500');
         }
-    }).fadeIn('500');
+    })
 }
 
 /*initialize */

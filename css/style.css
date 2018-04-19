@@ -345,6 +345,80 @@ li
     background-position: center center;
     background-size: cover;
 }
+/*How To Play*/
+#playHelp
+{
+   background-image: url("../image/playHelpBackground.jpg");
+
+
+}
+#playHelp .mask
+{
+    display: flex;
+    /*align-items: center; /* horizontal */
+    justify-content: center; /* vertical */
+    padding-top: 0;
+}/*
+#playHelp .p0 .title,#playHelp .p6 .title
+{
+    margin-top: 160px;
+}*/
+
+#playHelp .pages
+{
+    position: relative;
+    margin: auto;
+}
+
+#playHelp .key
+{
+    margin:0;
+}
+#playHelp .p1 .key,#playHelp .p2 .key
+{
+    display: inline-block;
+    position: relative;
+}
+#playHelp .p1 .key.left
+{
+    left:-4em;
+}
+#playHelp .p1 .key.right
+{
+    right: -4em;
+}#playHelp .p2 .key.A
+{
+    right: -3em;
+   
+}
+#playHelp .p2 .key.B
+{
+    left:-3em;
+}
+.dark .nextPageButton
+{
+    position: absolute;
+    right: 0;
+    top:calc(50% - 24px);
+    background-image: url("../image/arrows.png");
+    background-repeat: no-repeat;
+    background-size: 50px 218px;
+    background-position: 0 0;
+    height: 48px;
+    width: 48px;
+}
+.dark .lastPageButton
+{
+    position: absolute;
+    left:0;
+    top:calc(50% - 24px);
+    background-image: url("../image/arrows.png");
+    background-repeat: no-repeat;
+    background-size: 50px 218px;
+    background-position: 0 -50px;
+    height: 48px;
+    width: 48px;
+}
 /*頁尾區*/
 .footer>.article#contact
 {

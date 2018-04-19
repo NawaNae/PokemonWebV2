@@ -81,6 +81,63 @@ class PageList extends Array
         return  this.find(element=> element.id==id);
     }
 }
+NawaNawa.buttonEnableChecker=function ()
+{
+    let content=this.querySelector(".pageContent");
+    if(content)
+    {
+        if(!content.dataset.nextpagesrc)
+            if(!button.classList.contains("disable"))
+                button.classList.add("disable");
+        if(content.dataset.lastpagesrc)
+            if(theOtherButton.classList.contains("disable"))
+            theOtherButton.classList.remove("disable");
+    }
+}
+NawaNawa.nextPageListener=
+function(e)
+{
+    if(this.classList.contains("disable"))
+    return;
+    let pages=this.parentElement.querySelector(".pages");
+    let theOtherButton=this.parentElement.querySelector(".lastPageButton");
+    let content=pages.querySelector(".pageContent");
+    let button=this;
+    $(pages).hide().load(content.dataset.nextpagesrc,function(){
+        let content=this.querySelector(".pageContent");
+        if(content)
+        {
+            if(!content.dataset.nextpagesrc)
+                if(!button.classList.contains("disable"))
+                    button.classList.add("disable");
+            if(content.dataset.lastpagesrc)
+                if(theOtherButton.classList.contains("disable"))
+                theOtherButton.classList.remove("disable");
+        }
+    }).fadeIn('500');
+}
+NawaNawa.lastPageListener=
+function(e)
+{
+    if(this.classList.contains("disable"))
+        return;
+    let pages=this.parentElement.querySelector(".pages");
+    let theOtherButton=this.parentElement.querySelector(".nextPageButton");
+    let content=pages.querySelector(".pageContent");
+    let button=this;
+    $(pages).hide().load(content.dataset.lastpagesrc,function(){
+        let content=this.querySelector(".pageContent");
+        if(content)
+        {
+            if(!content.dataset.lastpagesrc)
+                if(!button.classList.contains("disable"))
+                    button.classList.add("disable");
+            if(content.dataset.nextpagesrc)
+                if(theOtherButton.classList.contains("disable"))
+                theOtherButton.classList.remove("disable");
+        }
+    }).fadeIn('500');
+}
 /*initialize */
 
 NawaNawa.pageList=new NawaNawa.Classes.PageList();
@@ -89,5 +146,7 @@ NawaNawa.pageList=new NawaNawa.Classes.PageList();
  let list= Array.from(document.querySelectorAll("article"));
  for(var i=0;i<list.length;i++)
      NawaNawa.pageList.push(list[i]);
+$(".nextPageButton").on("click",NawaNawa.nextPageListener);
+$(".lastPageButton").on("click",NawaNawa.lastPageListener);
 })();
 

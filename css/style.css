@@ -583,3 +583,94 @@ li
     background-color:rgb(07,55,99);
     color:rgb(204,204,204);
 }
+/* 攻略共同設定 */
+.raiderbody{
+    width: 1280px;
+}
+h1.raiderTitle{
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.center.light.mask{
+    width: 100%;
+    height: 530px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.5);
+}
+.center.mask{
+    width: 100%;
+    height: 530px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    /* background-color: rgba(255,255,255,0.5); */
+}
+.raiderContent{
+    font-size: 24px;
+    margin-left: 20px;
+}
+/* 攻略導覽列連結大小 */
+.raider{
+    font-size: 22px;
+}
+/* 攻略第一篇文章 */
+#firstGym.article{
+    margin-top: 3em;
+}
+#firstGym.feature{
+    background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -webkit-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -o-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+}
+#secondGym.feature{
+    background: linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -moz-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -webkit-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -o-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+}
+#thirdGym.feature{
+    background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -webkit-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -o-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+}
+#fourthGym.feature{
+    background: linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -moz-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -webkit-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -o-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+}
+#fifthGym.feature{
+    background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -webkit-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -o-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+}
+#sixthGym.feature{
+    background: linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -moz-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -webkit-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -o-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+}
+#seventhGym.feature{
+    background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -webkit-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -o-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+}
+#eighthGym.feature{
+    background: linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -moz-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -webkit-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: -o-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+}
+#championsLeague.feature{
+    background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -webkit-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: -o-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+}

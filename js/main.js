@@ -227,6 +227,7 @@ $(".nextPageButton").on("click",NawaNawa.nextPageListener);
 $(".lastPageButton").on("click",NawaNawa.lastPageListener);
 $(".playNow").on("click",()=>{window.open("https://nawanae.github.io/PokemonYellow/start.html","_blank")})
 $(".gitHub").on("click",()=>{window.open("https://github.com/NawaNae/PokemonYellow","_blank")})
+$(".raidersGo").on("click",()=>{window.location.replace("pages/raiders/raiders.html")})
 $("#playHelp .GB").on("load",function(){$(this).fadeIn(300)});
 NawaNawa.hashChangeHandler();
 //let inmagePreLoad=[(new Image()).src="image/directions.jpg",(new Image()).src="image/AB.jpg",(new Image()).src="image/select.jpg"];

@@ -357,11 +357,7 @@ li
     /*align-items: center; /* horizontal */
     justify-content: center; /* vertical */
     padding-top: 0;
-}/*
-#playHelp .p0 .title,#playHelp .p6 .title
-{
-    margin-top: 160px;
-}*/
+}
 
 #playHelp .pages
 {
@@ -372,31 +368,46 @@ li
 {
     background-color: rgba(0,0,0,0,0.5);
 }
-
+#playHelp .GB
+{
+    display: block;
+    position: absolute;
+    right: calc(25% - 173.5px);
+    top:calc(50% - 287px);
+}
 #playHelp .key
 {
     margin:0;
 }
-#playHelp .p1 .key,#playHelp .p2 .key
+#playHelp[data-page="1"] .key,#playHelp[data-page="2"] .key
 {
     display: inline-block;
     position: relative;
 }
-#playHelp .p1 .key.left
+#playHelp[data-page="1"] .key.left
 {
     left:-4em;
 }
-#playHelp .p1 .key.right
+#playHelp[data-page="1"] .key.right
 {
     right: -4em;
-}#playHelp .p2 .key.A
+}#playHelp[data-page="2"] .key.A
 {
     right: -3em;
    
 }
-#playHelp .p2 .key.B
+#playHelp[data-page="2"] .key.B
 {
     left:-3em;
+}
+#playHelp[data-page="3"] .key
+{
+    display: inline-block;
+    margin-right: 30px;
+}
+#playHelp[data-page="3"] .pageContent
+{
+    margin-right: -30px;
 }
 .dark .nextPageButton
 {

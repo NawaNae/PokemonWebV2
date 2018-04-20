@@ -207,7 +207,8 @@ $(".nextPageButton").on("click",NawaNawa.nextPageListener);
 $(".lastPageButton").on("click",NawaNawa.lastPageListener);
 $(".playNow").on("click",()=>{window.open("https://nawanae.github.io/PokemonYellow/start.html","_blank")})
 $(".gitHub").on("click",()=>{window.open("https://github.com/NawaNae/PokemonYellow","_blank")})
-let inmagePreLoad=[(new Image()).src="image/directions.jpg",(new Image()).src="image/AB.jpg",(new Image()).src="image/select.jpg"];
+$("#playHelp .GB").on("load",function(){$(this).fadeIn(300)});
+//let inmagePreLoad=[(new Image()).src="image/directions.jpg",(new Image()).src="image/AB.jpg",(new Image()).src="image/select.jpg"];
 })();
 window.onhashchange=
 function(e)

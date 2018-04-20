@@ -368,6 +368,10 @@ li
     position: relative;
     margin: auto;
 }
+#playHelp .mask
+{
+    background-color: rgba(0,0,0,0,0.5);
+}
 
 #playHelp .key
 {
@@ -490,9 +494,19 @@ li
     display: inline-block;
     margin:0;
 }
+.footer .share
+{height: 48px;}
 .footer .share a
 {
     margin-right: calc((485px - 384px )/ 7);;
+    min-width: 48px;
+    height: 100%;
+    position: relative;
+}
+.footer .share a>img
+{
+    position: absolute;
+    bottom:0;
 }
 /*share圖片視覺回饋*/
 .footer .share a>img

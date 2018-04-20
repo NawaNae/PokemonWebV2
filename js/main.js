@@ -194,7 +194,27 @@ function(e)
         }
     })
 }
+NawaNawa.getVariable=function getVariable()
+{
+    var HashStr = document.location.hash.substring(1, document.location.hash.length);
+    var HashStr0 = HashStr[0];
+    HashStr=HashStr.substring(1, document.location.hash.length)
+    HashStr0 = HashStr0.toLowerCase();
+    HashStr0 += HashStr;
+    if (HashStr0 != '') 
+        NawaNawa.pageList.select = HashStr0;
+}
+NawaNawa.hashChangeHandler=function hashChangeHandler(e)
+{
 
+    if(location.hash)
+    {
+        NawaNawa.getVariable();
+        e.preventDefault();
+    }
+    else{}
+}
+window.onhashchange=NawaNawa.hashChangeHandler;
 /*initialize */
 
 NawaNawa.pageList=new NawaNawa.Classes.PageList();
@@ -208,26 +228,8 @@ $(".lastPageButton").on("click",NawaNawa.lastPageListener);
 $(".playNow").on("click",()=>{window.open("https://nawanae.github.io/PokemonYellow/start.html","_blank")})
 $(".gitHub").on("click",()=>{window.open("https://github.com/NawaNae/PokemonYellow","_blank")})
 $("#playHelp .GB").on("load",function(){$(this).fadeIn(300)});
+NawaNawa.hashChangeHandler();
 //let inmagePreLoad=[(new Image()).src="image/directions.jpg",(new Image()).src="image/AB.jpg",(new Image()).src="image/select.jpg"];
 })();
-window.onhashchange=
-function(e)
-{
 
-    if(location.hash)
-    {
-        getVariable();
-        e.preventDefault();
-    }
-    else{}
-}
-function getVariable()
-{
-    var HashStr = document.location.hash.substring(1, document.location.hash.length);
-    var HashStr0 = HashStr[0];
-    HashStr=HashStr.substring(1, document.location.hash.length)
-    HashStr0 = HashStr0.toLowerCase();
-    HashStr0 += HashStr;
-    if (HashStr0 != '') 
-        NawaNawa.pageList.select = HashStr0;
-}
+

@@ -159,6 +159,8 @@ NawaNawa.pageList=new NawaNawa.Classes.PageList();
      NawaNawa.pageList.push(list[i]);
 $(".nextPageButton").on("click",NawaNawa.nextPageListener);
 $(".lastPageButton").on("click",NawaNawa.lastPageListener);
+$(".playNow").on("click",()=>{window.open("https://nawanae.github.io/PokemonYellow/start.html","_blank")})
+$(".gitHub").on("click",()=>{window.open("https://github.com/NawaNae/PokemonYellow","_blank")})
 })();
 window.onhashchange=
 function(e)

@@ -326,6 +326,7 @@ li
 .feature#withoutLogin
 {
     background-image: url("../image/ibuBackground.jpg");
+    background-size: 100% 100%;
 }
 .ibu
 {

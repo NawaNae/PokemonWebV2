@@ -609,6 +609,7 @@ h1.raiderTitle{
     /* background-color: rgba(255,255,255,0.5); */
 }
 .raiderContent{
+    line-height: 2;
     font-size: 24px;
     margin-left: 20px;
 }
@@ -620,6 +621,7 @@ h1.raiderTitle{
 #firstGym.article{
     margin-top: 3em;
 }
+
 #firstGym.feature{
     background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
     background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 

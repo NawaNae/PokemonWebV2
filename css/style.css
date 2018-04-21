@@ -638,28 +638,28 @@ h1.raiderTitle{
 
 }
 #secondGym.feature{
-    background: linear-gradient(44deg, #5E3F50 35%, #7B355E 60%); 
-    background: -moz-linear-gradient(44deg, #5E3F50 35%, #7B355E 60%); 
-    background: -webkit-linear-gradient(44deg, #5E3F50 35%, #7B355E 60%); 
-    background: -o-linear-gradient(44deg, #5E3F50 35%, #7B355E 60%); 
+    background: linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -moz-linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -webkit-linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -o-linear-gradient(44deg, #40152A 35%, #731630 60%); 
 }
 #thirdGym.feature{
-    background: linear-gradient(44deg, #BFE3F3 35%, #F5DFEF 60%); 
-    background: -moz-linear-gradient(44deg, #BFE3F3 35%, #F5DFEF 60%); 
-    background: -webkit-linear-gradient(44deg, #BFE3F3 35%, #F5DFEF 60%); 
-    background: -o-linear-gradient(44deg, #BFE3F3 35%, #F5DFEF 60%); 
+    background: linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -moz-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
 }
 #fourthGym.feature{
-    background: linear-gradient(44deg, #103339 35%, #264750 60%); 
-    background: -moz-linear-gradient(44deg, #103339 35%, #264750 60%); 
-    background: -webkit-linear-gradient(44deg, #103339 35%, #264750 60%); 
-    background: -o-linear-gradient(44deg, #103339 35%, #264750 60%); 
+    background: linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -moz-linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -webkit-linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -o-linear-gradient(44deg, #40152A 35%, #731630 60%); 
 }
 #fifthGym.feature{
-    background: linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
-    background: -moz-linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
-    background: -webkit-linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
-    background: -o-linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
+    background: linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -moz-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
 
 }
 #sixthGym.feature{
@@ -669,20 +669,20 @@ h1.raiderTitle{
     background: -o-linear-gradient(44deg, #40152A 35%, #731630 60%); 
 }
 #seventhGym.feature{
-    background: linear-gradient(44deg, #F8D7D0 35%, #FFE9CD 60%); 
-    background: -moz-linear-gradient(44deg, #F8D7D0 35%, #FFE9CD 60%); 
-    background: -webkit-linear-gradient(44deg, #F8D7D0 35%, #FFE9CD 60%); 
-    background: -o-linear-gradient(44deg, #F8D7D0 35%, #FFE9CD 60%); 
+    background: linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -moz-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
 }
 #eighthGym.feature{
-    background: linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
-    background: -moz-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
-    background: -webkit-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
-    background: -o-linear-gradient(44deg, rgba(86, 53, 94, 0.7)50%, rgba(187, 158, 220, 0.5)100%); 
+    background: linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -moz-linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -webkit-linear-gradient(44deg, #40152A 35%, #731630 60%); 
+    background: -o-linear-gradient(44deg, #40152A 35%, #731630 60%);  
 }
 #championsLeague.feature{
-    background: linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
-    background: -moz-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
-    background: -webkit-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
-    background: -o-linear-gradient(45deg, rgba(106, 159, 227, 1)50%, rgba(255, 255, 255, 0.8)100%); 
+    background: linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -moz-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+    background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
 }

@@ -617,6 +617,10 @@ h1.raiderTitle{
     /* margin-left: 20px; */
     width: 90%;
 }
+#firstGym .raiderContent,#thirdGym .raiderContent,#fourthGym .raiderContent
+{
+    line-height: 1.6;
+}
 /* 攻略導覽列連結大小 */
 .raider{
     font-size: 22px;
@@ -631,7 +635,7 @@ h1.raiderTitle{
     background: -moz-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
     background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
     background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
-    
+
 }
 #secondGym.feature{
     background: linear-gradient(44deg, #5E3F50 35%, #7B355E 60%); 
@@ -656,6 +660,7 @@ h1.raiderTitle{
     background: -moz-linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
     background: -webkit-linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
     background: -o-linear-gradient(44deg, #BFE3F3 35%, #EDF6FA 60%); 
+
 }
 #sixthGym.feature{
     background: linear-gradient(44deg, #40152A 35%, #731630 60%); 

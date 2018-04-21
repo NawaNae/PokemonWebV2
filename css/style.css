@@ -609,7 +609,7 @@ h1.raiderTitle{
     /* background-color: rgba(255,255,255,0.5); */
 }
 .raiderContent{
-    line-height: 2;
+    line-height: 1.8;
     font-size: 24px;
     margin-left: 20px;
 }

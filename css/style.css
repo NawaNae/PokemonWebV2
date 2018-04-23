@@ -138,6 +138,7 @@ li
 {
     border-style: dotted;
 }
+
 /*字體大小 粗細*/
 /*標題*/
 .title
@@ -188,6 +189,7 @@ li
     background-size: 100% 100%;
     background-position: center;
 }
+
 /*HTML 內容設定區*/
 /*外層容器*/
 .container
@@ -331,10 +333,11 @@ li
 .ibu
 {
     position: absolute;
-    right: 80px;
+    right: calc(25% - 215px);
+    top:calc(50% - 230px);
     width: 430px;
     height: 460px;
-    margin-top: 100px;
+    
 }
 /*特性區*/
 /*特性3*/
@@ -456,10 +459,10 @@ li
 .unownf
 {
     position: absolute;
-    left: 80px;
+    left: calc(25% - 215px);
+    top:calc(50% - 230px);
     width: 430px;
     height: 460px;
-    margin-top: 100px;
 }
 #raiders
 {
@@ -685,4 +688,167 @@ h1.raiderTitle{
     background: -moz-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
     background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
     background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
+}
+/*窄螢幕顯示不分左右*/
+@media screen and (max-width: 1149px)
+{
+    .left.mask,.right.mask
+    {
+        position: relative;
+        right: 0;
+        left: 0;
+        display: block;
+        margin:0 auto;
+    }
+    .protagonist,.ibu,#playHelp .GB,.unownf
+    {
+        display: none;
+    }
+    .feature,.footer .article,#main.article
+    {
+        position: relative;
+        width:100%;
+        min-width: unset;
+        height: 710px;
+    }
+    .container
+    {
+        min-width: unset;
+    }
+    .header
+    {
+        min-width: unset;
+    }
+}
+@media screen and (max-width:1500px)
+{
+    .raiders  .header > .navigation > .icon
+    {
+        
+        left: 55px;
+        width:32px;
+        height: 32px;
+        transition: all 0.3s;
+    }
+    .raiders .linkList
+    {
+        position: absolute;
+        transition:all 0.3s;
+        overflow: hidden;
+        top:100%;
+        left:55px;
+
+    }
+    .raiders  .header > .navigation > .linkList > li 
+    {
+        display: block;
+        padding:0 20px;
+        background: rgba(153,0,0,0.7);
+    }
+    .raiders  .header > .navigation > .linkList > li:hover
+    {
+        background-color: rgb(153,0,0);
+    }
+    .raiders .header > .navigation .linkList[data-check="false"]
+    {
+
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    .raiders .header > .navigation .linkList[data-check="true"]
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1070px)
+{
+    .header > .navigation > .icon
+    {
+        
+        left: 55px;
+        width:32px;
+        height: 32px;
+        transition: all 0.3s;
+    }
+    .linkList
+    {
+        position: absolute;
+        transition:all 0.3s;
+        overflow: hidden;
+        top:100%;
+        left:55px;
+
+    }
+    .header > .navigation > .linkList > li 
+    {
+        display: block;
+        padding:0 20px;
+        background: rgba(153,0,0,0.7);
+    }
+    .header > .navigation > .linkList > li:hover
+    {
+        background-color: rgb(153,0,0);
+    }
+    .header > .navigation .linkList[data-check="false"]
+    {
+
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    .header > .navigation .linkList[data-check="true"]
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    .declare .defContainer .explanation
+    {
+        position: relative;
+        display: block;
+    }
+    .chicken,.pikachu
+    {
+        display: none;
+    }
+  
+    
+}
+@media screen and (max-width:800px)
+{
+    .featureList li {
+    margin-right: 100px;
+    }
+    
+
+.footer .footerBody {
+    background-color: rgba(255,255,255,0.5);
+    padding-top: 160px;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+}
+}
+@media screen and (max-width:720px)
+{
+    .featureList{display: none;}
+    .mask{width:100%;}
+}
+@media screen and (max-width:500px)
+{
+    .title
+    {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .content
+    {
+        font-size: 25px;
+    }
+    .button
+    {
+        font-size: 20px;
+        padding:10px 12px;
+    }
 }

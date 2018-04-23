@@ -300,6 +300,10 @@ li
 {
     margin-right: 125px;
 }
+.featureList li a
+{
+    color:    rgb(51,51,51);
+}
 .featureList
 {
     margin-right: -125px;

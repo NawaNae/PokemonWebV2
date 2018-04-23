@@ -300,6 +300,10 @@ li
 {
     margin-right: 125px;
 }
+.featureList li a
+{
+    color:    rgb(51,51,51);
+}
 .featureList
 {
     margin-right: -125px;
@@ -840,6 +844,13 @@ h1.raiderTitle{
     text-align: center;
 }
 }
+@media screen and (min-height:760px)
+{
+    .article
+    {
+        min-height:calc(100vh - 53px); 
+    }
+}
 @media screen and (max-width:720px)
 {
     .featureList{display: none;}
@@ -861,11 +872,8 @@ h1.raiderTitle{
         font-size: 20px;
         padding:10px 12px;
     }
-}
-@media screen and (min-height:760px)
-{
-    .article
+    .footerContent .line
     {
-        min-height:calc(100vh - 53px); 
+        width:100%;
     }
 }

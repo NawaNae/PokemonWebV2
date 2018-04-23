@@ -64,7 +64,7 @@ class PageList extends Array
             if(typeof select!="undefined")
             {
                 this.indexNow=select;
-                $('html').animate({scrollTop: $(this[this.indexNow]).offset().top-57}, 1000,()=>{NawaNawa.scrollLock=false;});
+                $('html').animate({scrollTop: $(this[this.indexNow]).offset().top-53}, 1000,()=>{NawaNawa.scrollLock=false;});
             }
         
     }

@@ -782,6 +782,7 @@ h1.raiderTitle{
 {
     .header > .navigation > .icon
     {
+        
         position: absolute;
         
        margin:0px;
@@ -790,6 +791,15 @@ h1.raiderTitle{
         height: 52px;
         top:calc(50% - 26px);
         transition: all 0.3s;
+    }
+    .header > .navigation > .icon:hover
+    {
+        transform: scale(1.5,1.5);
+        
+    }
+    .header > .navigation > .icon:active
+    {
+        transform:rotate(30deg) scale(1.5,1.5);
     }
     .linkList
     {
@@ -819,6 +829,7 @@ h1.raiderTitle{
     }
     .header > .navigation .linkList[data-check="true"]
     {
+        z-index: 99;
         visibility: visible;
         opacity: 1;
     }

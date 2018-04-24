@@ -210,7 +210,7 @@ NawaNawa.hashChangeHandler=function hashChangeHandler(e)
     if(location.hash)
     {
         NawaNawa.getVariable();
-        e.preventDefault();
+        //e.preventDefault();
     }
     else{}
 }

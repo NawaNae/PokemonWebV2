@@ -14,7 +14,9 @@ html, body {
 body
 {
     margin:0px;
+        overflow-y: hidden;
 }
+
 /*連結*/
 a
 {
@@ -221,6 +223,7 @@ li
     display: inline-block;
     /*margin-top:1em;*/
     vertical-align: sub;
+    margin-top: 8px;
     width: 32px;
     height: 32px;
 }
@@ -288,7 +291,7 @@ li
 #main.article .mask
 {
     height:auto;
-    margin:0px 13px;
+    margin:0px;
 }
 /*特性陣列圖檔*/
 .featureList img
@@ -729,11 +732,14 @@ h1.raiderTitle{
 {
     .raiders  .header > .navigation > .icon
     {
+        position: absolute;
         
-        left: 55px;
-        width:32px;
-        height: 32px;
-        transition: all 0.3s;
+        margin:0px;
+         left: 55px;
+         width:52px;
+         height: 52px;
+         top:calc(50% - 26px);
+         transition: all 0.3s;
     }
     .raiders .linkList
     {
@@ -777,10 +783,23 @@ h1.raiderTitle{
     .header > .navigation > .icon
     {
         
+        position: absolute;
+        
+       margin:0px;
         left: 55px;
-        width:32px;
-        height: 32px;
+        width:52px;
+        height: 52px;
+        top:calc(50% - 26px);
         transition: all 0.3s;
+    }
+    .header > .navigation > .icon:hover
+    {
+        transform: scale(1.5,1.5);
+        
+    }
+    .header > .navigation > .icon:active
+    {
+        transform:rotate(30deg) scale(1.5,1.5);
     }
     .linkList
     {
@@ -810,6 +829,7 @@ h1.raiderTitle{
     }
     .header > .navigation .linkList[data-check="true"]
     {
+        z-index: 99;
         visibility: visible;
         opacity: 1;
     }
@@ -870,7 +890,7 @@ h1.raiderTitle{
     .button
     {
         font-size: 20px;
-        padding:10px 12px;
+        padding: 12px 44px;
     }
     .footerContent .line
     {
@@ -883,6 +903,14 @@ h1.raiderTitle{
     {
         background-size: auto 100%;
     }
-        
-  
+    .footer>.article#contact
+    {
+        background-size: 100% auto;
+        background-image:url("../image/footerLong.jpg");
+    }
+    #main.article
+    {
+        background-size:  100% 100%;
+        background-image: url("../image/mainLong.jpg")
+    }
 }

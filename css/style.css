@@ -778,6 +778,7 @@ h1.raiderTitle{
     .raiders  .header > .navigation > .linkList > li 
     {
         display: block;
+        margin:0;
         padding:0 20px;
         background: rgba(153,0,0,0.7);
     }
@@ -852,6 +853,7 @@ h1.raiderTitle{
     .header > .navigation > .linkList > li 
     {
         display: block;
+        margin:0;
         padding:0 20px;
         background: rgba(153,0,0,0.7);
     }
@@ -945,7 +947,7 @@ h1.raiderTitle{
 }
 .come-in {
     animation-delay: 1s;
-    animation: come-in 1s ease forwards;
+    animation: come-in 0.8s ease forwards;
   }
  
   

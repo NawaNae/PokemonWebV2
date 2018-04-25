@@ -6,11 +6,11 @@
 ### Even you become a Guanyu master.
 #### still, you are ugly.
 
-##Main Page
+## Main Page
 designed by NawaNawa
 
-##Game Tips/Solution page
+## Game Tips/Solution page
 designed by a105590016
 
-##Game Page
+## Game Page
 designed by NawaNawa and PrismRealm

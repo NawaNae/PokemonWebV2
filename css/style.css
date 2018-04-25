@@ -169,8 +169,16 @@ li
 }
 .header>.navigation>.linkList
 {
+
     font-size: 28px;
+    position: absolute;
     font-weight: bold;
+    margin-right: calc((100vw - 703px)/-6 );
+}
+
+.header>.navigation>.linkList li
+{  /*margin-right:40px /*calc(( 100vw - 748px )/6);*/
+   
 }
 .featureText
 {
@@ -238,12 +246,11 @@ li
 .header > .navigation > .linkList
 {
     display: inline-block;
-    /*margin-right: calc(( 100vw - 748px )/-6);*/
 }
 /*導覽列連結陣列物件*/
 .header > .navigation > .linkList > li
 {
-    margin-right:40px /*calc(( 100vw - 748px )/6);*/
+    margin-right: calc((100vw - 715px)/6 );
 }
 /*導覽列 link 視覺回饋*/
 .header > .navigation > .linkList > li > a:hover
@@ -642,6 +649,12 @@ h1.raiderTitle{
 {
     line-height: 1.6;
 }
+/*導覽列連結陣列物件*/
+.raiders .header > .navigation > .linkList > li
+{
+    margin-right: calc((100vw - 1000px)/9 );
+}
+
 /* 攻略導覽列連結大小 */
 .raider{
     font-size: 22px;
@@ -737,9 +750,6 @@ h1.raiderTitle{
     {
         min-width: unset;
     }
-}
-@media screen and (max-width:1500px)
-{
     .raiders  .header > .navigation > .icon
     {
         position: absolute;
@@ -790,7 +800,26 @@ h1.raiderTitle{
 }
 @media screen and (max-width:1070px)
 {
-    .header > .navigation > .icon
+ 
+    .declare .defContainer .explanation
+    {
+        position: relative;
+        display: block;
+    }
+    .chicken,.pikachu
+    {
+        display: none;
+    }
+    #main.article
+    {
+        background-size: auto 100%;
+    }
+    
+}
+@media screen and (max-width:800px)
+{
+
+   .header > .navigation > .icon
     {
         
         position: absolute;
@@ -842,24 +871,7 @@ h1.raiderTitle{
         z-index: 99;
         visibility: visible;
         opacity: 1;
-    }
-    .declare .defContainer .explanation
-    {
-        position: relative;
-        display: block;
-    }
-    .chicken,.pikachu
-    {
-        display: none;
-    }
-    #main.article
-    {
-        background-size: auto 100%;
-    }
-    
 }
-@media screen and (max-width:800px)
-{
 
     .featureList li {
     margin-right: 100px;

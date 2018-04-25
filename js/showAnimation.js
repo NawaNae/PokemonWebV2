@@ -16,7 +16,7 @@ var checkAnimate=0;
       
         var $t            = $(this),
             $w            = $(window),
-            viewTop       = $w.scrollTop(),
+            viewTop       = $w.scrollTop() + 33,
             viewBottom    = viewTop + $w.height(),
             _top          = $t.offset().top,
             _bottom       = _top + $t.height(),
@@ -34,7 +34,8 @@ var checkAnimate=0;
         var el = $(el);
         if (el.visible(true)) {
             el.addClass("come-in"); 
-        } 
+        } else if(el[0].classList.contains("come-in"))
+            el[0].classList.remove("come-in");
         });
  }
   $(window).scroll(function(event) {

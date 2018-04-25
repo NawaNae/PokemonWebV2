@@ -381,9 +381,6 @@ li
 }
 #playHelp .mask
 {
-    display: flex;
-    /*align-items: center; /* horizontal */
-    justify-content: center; /* vertical */
     padding-top: 0;
 }
 

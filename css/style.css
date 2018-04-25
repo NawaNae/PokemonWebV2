@@ -171,15 +171,12 @@ li
 {
 
     font-size: 28px;
-    position: absolute;
+   
     font-weight: bold;
-    margin-right: calc((100vw - 703px)/-6 );
+    margin-right: calc((100vw - 703px)/-8 );
 }
 
-.header>.navigation>.linkList li
-{  /*margin-right:40px /*calc(( 100vw - 748px )/6);*/
-   
-}
+
 .featureText
 {
     font-size: 24px;
@@ -221,6 +218,7 @@ li
 .header > .navigation
 {
     position: relative;
+    text-align: center;
     box-sizing: border-box;
     padding:0 55px;
     width: 100%;
@@ -250,7 +248,7 @@ li
 /*導覽列連結陣列物件*/
 .header > .navigation > .linkList > li
 {
-    margin-right: calc((100vw - 715px)/6 );
+    margin-right: calc((100vw - 715px)/8 );
 }
 /*導覽列 link 視覺回饋*/
 .header > .navigation > .linkList > li > a:hover
@@ -760,7 +758,7 @@ h1.raiderTitle{
     }
     .raiders .linkList
     {
-        position: absolute;
+       position: absolute;
         transition:all 0.3s;
         overflow: hidden;
         top:100%;

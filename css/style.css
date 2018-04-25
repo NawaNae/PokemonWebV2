@@ -63,6 +63,7 @@ li
 {
     width:680px;
     height:100%;
+
     position: relative;
     display:inline-block;
     text-align: center;
@@ -70,15 +71,21 @@ li
 /*右遮罩*/
 .right.mask
 {
-    padding-top:160px;
     position: absolute;
+    display: flex;
     right:55px;
 }
 /*左遮罩*/
 .left.mask
 {
-    padding-top:160px;
+    display: flex;
+    
     margin-left: 55px;
+}
+.flexCenter
+{
+
+    margin:auto;
 }
 .feature,.footer .article,#main.article
 {
@@ -231,11 +238,12 @@ li
 .header > .navigation > .linkList
 {
     display: inline-block;
+    /*margin-right: calc(( 100vw - 748px )/-6);*/
 }
 /*導覽列連結陣列物件*/
 .header > .navigation > .linkList > li
 {
-    margin-right: 40px;
+    margin-right:40px /*calc(( 100vw - 748px )/6);*/
 }
 /*導覽列 link 視覺回饋*/
 .header > .navigation > .linkList > li > a:hover
@@ -247,14 +255,7 @@ li
 {
     text-shadow:0px 1px 10px #ffffff,0px 1px 10px #ffffff;
 }
-/*對齊用容器*/
-.header .circleContainer
-{
-    width:100%;
-    position: relative;
-    height: 0px;
 
-}
 /*寶可夢球圓形*/
 .header .circle
 {
@@ -269,6 +270,14 @@ li
     top: -20px;
     left:calc(50% - 20px);
     display: inline-block;
+}
+/*對齊用容器*/
+.header .circleContainer
+{
+    width:100%;
+    position: relative;
+    height: 0px;
+
 }
 /*主頁區*/
 #main.article
@@ -292,6 +301,7 @@ li
 {
     height:auto;
     margin:0px;
+    margin-bottom: 20px;
 }
 /*特性陣列圖檔*/
 .featureList img
@@ -705,7 +715,7 @@ h1.raiderTitle{
         position: relative;
         right: 0;
         left: 0;
-        display: block;
+        display: flex;
         margin:0 auto;
     }
     .protagonist,.ibu,#playHelp .GB,.unownf
@@ -914,3 +924,19 @@ h1.raiderTitle{
         background-image: url("../image/mainLong.jpg")
     }
 }
+
+/*滾動動畫*/
+.animate
+{
+    opacity: 0;
+    transform: translateY(150px);
+}
+.come-in {
+    animation-delay: 1s;
+    animation: come-in 1s ease forwards;
+  }
+ 
+  
+  @keyframes come-in {
+    to { opacity: 1; transform: translateY(0);}
+  }

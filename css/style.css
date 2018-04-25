@@ -237,6 +237,7 @@ li
     /*margin-top:1em;*/
     vertical-align: sub;
     margin-top: 8px;
+    margin-right: 10px;
     width: 32px;
     height: 32px;
 }
@@ -647,7 +648,7 @@ h1.raiderTitle{
 /*導覽列連結陣列物件*/
 .raiders .header > .navigation > .linkList > li
 {
-    margin-right: calc((100vw - 1000px)/9 );
+    margin-right: calc((100vw - 1010px)/10 );
 }
 
 /* 攻略導覽列連結大小 */
@@ -715,35 +716,17 @@ h1.raiderTitle{
     background: -webkit-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
     background: -o-linear-gradient(44deg, #DCB8F3 35%, #F5DFEF 60%); 
 }
-/*窄螢幕顯示不分左右*/
-@media screen and (max-width: 1149px)
+/*攻略縮球處理*/
+@media screen and (max-width: 1250px)
 {
-    .left.mask,.right.mask
+    .raiders  .header > .navigation > .icon:hover
     {
-        position: relative;
-        right: 0;
-        left: 0;
-        display: flex;
-        margin:0 auto;
+        transform: scale(1.5,1.5);
+        
     }
-    .protagonist,.ibu,#playHelp .GB,.unownf
+    .raiders   .header > .navigation > .icon:active
     {
-        display: none;
-    }
-    .feature,.footer .article,#main.article
-    {
-        position: relative;
-        width:100%;
-        min-width: unset;
-        height: 710px;
-    }
-    .container
-    {
-        min-width: unset;
-    }
-    .header
-    {
-        min-width: unset;
+        transform:rotate(30deg) scale(1.5,1.5);
     }
     .raiders  .header > .navigation > .icon
     {
@@ -793,6 +776,38 @@ h1.raiderTitle{
         visibility: visible;
         opacity: 1;
     }
+}
+/*窄螢幕顯示不分左右*/
+@media screen and (max-width: 1149px)
+{
+    .left.mask,.right.mask
+    {
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        margin:0 auto;
+    }
+    .protagonist,.ibu,#playHelp .GB,.unownf
+    {
+        display: none;
+    }
+    .feature,.footer .article,#main.article
+    {
+        position: relative;
+        width:100%;
+        min-width: unset;
+        height: 710px;
+    }
+    .container
+    {
+        min-width: unset;
+    }
+    .header
+    {
+        min-width: unset;
+    }
+    
 }
 @media screen and (max-width:1070px)
 {

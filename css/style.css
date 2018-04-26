@@ -48,6 +48,7 @@ li
 /*內容*/
 .content
 {
+    line-height: 1.5;
     text-align: center;
 }
 .article *
@@ -196,7 +197,6 @@ li
 .developerInfo
 {
     font-size: 24px;
-    font-weight: bold;
 }
 .article
 {

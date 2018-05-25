@@ -83,6 +83,7 @@ li
     
     margin-left: 55px;
 }
+
 .flexCenter
 {
 
@@ -174,7 +175,7 @@ li
     font-size: 28px;
    
     font-weight: bold;
-    margin-right: calc((100vw - 703px)/-8 );
+
 }
 
 
@@ -246,11 +247,23 @@ li
 {
     display: inline-block;
 }
-/*導覽列連結陣列物件*/
 .header > .navigation > .linkList > li
 {
-    margin-right: calc((100vw - 715px)/8 );
+    margin-right: 95.625px;
 }
+/*導覽列連結陣列物件*/
+@media screen and (max-width:1480px)
+{ 
+    .header > .navigation > .linkList{
+    margin-right: calc((100vw - 703px)/-8 );
+    }
+
+    .header > .navigation > .linkList > li
+    {
+        margin-right: calc((100vw - 715px)/8 );
+    }
+}
+
 /*導覽列 link 視覺回饋*/
 .header > .navigation > .linkList > li > a:hover
 {
@@ -500,7 +513,7 @@ li
 .footer>.article#contact
 {
     background-image: url("../image/footer.jpg");
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 .footerContent
 {
@@ -606,6 +619,21 @@ li
     border-color: rgb(204,204,204);
     background-color:rgb(07,55,99);
     color:rgb(204,204,204);
+}
+@media screen and (min-width:1680px)
+{
+    .right.mask, .ibu , .GB
+    {
+        position: absolute;
+        right: auto;
+        left: calc( 50vw + 55px);
+    }
+    .left.mask, .feature#childhood .protagonist, .unownf
+    {
+        position: absolute;
+        left: auto;
+        right: calc(50vw + 55px);
+    }
 }
 /* 攻略共同設定 */
 .raiderbody{

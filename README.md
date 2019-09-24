@@ -3,7 +3,7 @@
 ## Handsome Guanyu series,
 # Professor Huang.
 ## Become a Guanyu Master!
-### Even you become a Guanyu master.
+### Even if you become a Guanyu master.
 #### still, you are ugly.
 
 ## Main Page
